@@ -1,7 +1,20 @@
+import { useState } from "react";
 import { ArrowRight, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
+  // 1. Split the email into parts so the full string doesn't exist in the code
+  const emailUser = "saravanakumar";
+  const emailDomain = "sentriscale.com";
+
+  // 2. Set up state for the href. It starts empty to fool bots.
+  const [emailHref, setEmailHref] = useState("");
+
+  // 3. Construct the mailto link only when a user interacts with it
+  const handleInteraction = () => {
+    setEmailHref(`mailto:${emailUser}@${emailDomain}`);
+  };
+
   return (
     <section id="contact" className="relative py-24 overflow-hidden">
       {/* Background */}
@@ -43,10 +56,14 @@ const CTASection = () => {
               Questions? Reach out to our enterprise team
             </p>
             <a 
-              href="mailto:dwi4kia2h@mozmail.com" 
+              href={emailHref || "#"}
+              onMouseEnter={handleInteraction}
+              onFocus={handleInteraction}
+              onClick={handleInteraction}
               className="text-primary hover:underline font-medium"
             >
-              dwi4kia2h@mozmail.com
+              {/* React seamlessly stitches this together for the user to read */}
+              {emailUser}@{emailDomain}
             </a>
           </div>
         </div>
