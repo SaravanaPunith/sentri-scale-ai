@@ -33,9 +33,14 @@ const Navbar = () => {
           </div>
 
           {/* CTA */}
+          { /*
           <Button variant="default" size="sm">
             Contact Us
           </Button>
+          */ }
+         <a href="#contact" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Contact Us
+         </a>
         </div>
       </div>
     </nav>
