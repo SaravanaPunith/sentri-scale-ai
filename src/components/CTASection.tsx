@@ -45,9 +45,11 @@ const CTASection = () => {
               Schedule Technical Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+            {/*
             <Button variant="heroOutline" size="xl">
               Download Whitepaper
             </Button>
+           */}
           </div>
 
           {/* Contact info */}
