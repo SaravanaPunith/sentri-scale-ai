@@ -40,17 +40,25 @@ const CTASection = () => {
           </p>
 
           {/* CTA Buttons */}
+          {/*
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="hero" size="xl" className="group">
               Schedule Technical Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            {/*
-            <Button variant="heroOutline" size="xl">
-              Download Whitepaper
-            </Button>
-           */}
           </div>
+         */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              variant="hero"
+              size="xl"
+              className="group"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} >
+              Schedule Technical Demo
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
+
 
           {/* Contact info */}
           <div className="mt-12 pt-12 border-t border-border">
