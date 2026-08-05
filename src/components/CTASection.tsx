@@ -28,10 +28,10 @@ const CTASection = () => {
             <Shield className="w-10 h-10 text-primary" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
             Ready to Bridge the
             <br />
-            <span className="text-gradient">Trust Gap?</span>
+            Trust Gap?
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
@@ -63,7 +63,7 @@ const CTASection = () => {
           {/* Contact info */}
           <div className="mt-12 pt-12 border-t border-border">
             <p className="text-sm text-muted-foreground mb-4">
-              Questions? Reach out to our enterprise team
+              Questions/Demo? Reach out to our enterprise team
             </p>
             <a 
               href={emailHref || "#"}
