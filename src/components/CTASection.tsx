@@ -17,9 +17,9 @@ const CTASection = () => {
 
   return (
     <section id="contact" className="relative py-24 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-dark" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-glow opacity-40" />
+      {/* Background - Updated for a pleasant, professional light theme */}
+      <div className="absolute inset-0 bg-slate-50" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-200/40 blur-[120px] rounded-full pointer-events-none" />
       
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
